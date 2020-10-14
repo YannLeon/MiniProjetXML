@@ -64,22 +64,102 @@
     </options>
 
     <conseillers>
-        <conseiller id="">
-            <nom></nom>
-            <prenom></prenom>
-            <salaire></salaire>
-            <email></email>
+        <conseiller id="1">
+            <nom>Lambert</nom>
+            <prenom>Gérard</prenom>
+            <salaire>28000</salaire>
+            <email>gegelamb@laposte.net</email>
+        </conseiller>
+
+        <conseiller id="2">
+            <nom>Deray</nom>
+            <prenom>Odile</prenom>
+            <salaire>32000</salaire>
+            <email>odile.deray@gmail.com</email>
+        </conseiller>
+
+        <conseiller id="3">
+            <nom>Bonisseur de La Bath</nom>
+            <prenom>Hubert</prenom>
+            <salaire>48000</salaire>
+            <email>oss117@gouv.net</email>
+        </conseiller>
+
+        <conseiller id="4">
+            <nom>Leblanc</nom>
+            <prenom>Juste</prenom>
+            <salaire>26000</salaire>
+            <email>leblanc@hotmail.fr</email>
+        </conseiller>
+
+        <conseiller id="5">
+            <nom>Robis</nom>
+            <prenom>Numé</prenom>
+            <salaire>30000</salaire>
+            <email>numerobis@mail.eg</email>
+        </conseiller>
+
+        <conseiller id="6">
+            <nom>Balavoine</nom>
+            <prenom>Henry</prenom>
+            <salaire>33000</salaire>
+            <email>reussirsavie@mail.com</email>
         </conseiller>
     </conseillers>
 
     <clients>
-        <client id="">
-            <nom></nom>
-            <prenom></prenom>
-            <email></email>
-            <rib></rib>
-            <telephone></telephone>
-            <adresse></adresse>
+        <client id="01">
+            <nom>Bouteiller</nom>
+            <prenom>Martin</prenom>
+            <email>martinbout@gmail.com</email>
+            <rib>FR0012345678901234567890A12</rib>
+            <telephone>0615423568</telephone>
+            <adresse>13 bd de belleville 70043 Monopoly</adresse>
+        </client>
+
+        <client id="02">
+            <nom>Leon</nom>
+            <prenom>Yann</prenom>
+            <email>yannmleon@gmail.com</email>
+            <rib>FR0014745664901234574890L31</rib>
+            <telephone>06654248568</telephone>
+            <adresse>17 bd de belleville 70043 Monopoly</adresse>
+        </client>
+
+        <client id="03">
+            <nom>Col</nom>
+            <prenom>Alexandre</prenom>
+            <email>alexcol@orange.com</email>
+            <rib>FR0023344768901247567890Q94</rib>
+            <telephone>0767442568</telephone>
+            <adresse>65bis rue Lecourbe 70043 Monopoly</adresse>
+        </client>
+
+        <client id="04">
+            <nom>Lebrisse</nom>
+            <prenom>David</prenom>
+            <email>lebdav@outlook.com</email>
+            <rib>FR0012346723601234567890P47</rib>
+            <telephone>0617989568</telephone>
+            <adresse>68 rue Lecourbe 70043 Monopoly</adresse>
+        </client>
+
+        <client id="05">
+            <nom>Marty</nom>
+            <prenom>Ludovic</prenom>
+            <email>marlud@gmail.com</email>
+            <rib>FR0012376984678124567890P47</rib>
+            <telephone>0643535568</telephone>
+            <adresse>42 rue de vaugirard 70043 Monopoly</adresse>
+        </client>
+
+        <client id="06">
+            <nom>Karaki</nom>
+            <prenom>Ryana</prenom>
+            <email>karrya@outlook.com</email>
+            <rib>FR00123467236457986523560M74</rib>
+            <telephone>0678454545</telephone>
+            <adresse>42 rue de vaugirard 70043 Monopoly</adresse>
         </client>
     </clients>
 
