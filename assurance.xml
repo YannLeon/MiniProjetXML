@@ -1,0 +1,46 @@
+<!--Modélisation d'une base de données XML pour stocker les données d'une compagnie d'assurance-->
+<compagnie>
+    <contrats>
+        <nom></nom>
+        <options></options>
+        <prix></prix>
+        <date></date>
+        <idClient></idClient>
+        <idConseiller></idConseiller>
+    </contrats>
+
+    <options>
+        <option type="">
+            <nom></nom>
+            <risques></risques>
+            <prix></prix>
+        </option>
+    </options>
+
+    <conseillers>
+        <conseiller id="">
+            <nom></nom>
+            <prenom></prenom>
+            <salaire></salaire>
+            <email></email>
+        </conseiller>
+    </conseillers>
+
+    <clients>
+        <client id="">
+            <nom></nom>
+            <prenom></prenom>
+            <email></email>
+            <rib></rib>
+            <telephone></telephone>
+            <adresse></adresse>
+        </client>
+    </clients>
+
+    <risques>
+        <risque id="">
+            <nom></nom>
+            <gravite></gravite>
+        </risque>
+    </risques>
+</compagnie>
