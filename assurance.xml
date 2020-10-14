@@ -1,19 +1,65 @@
-<!--Modélisation d'une base de données XML pour stocker les données d'une compagnie d'assurance-->
+<!-- Modélisation d'une base de données XML pour stocker les données d'une compagnie d'assurance -->
 <compagnie>
     <contrats>
         <nom></nom>
         <options></options>
         <prix></prix>
         <date></date>
+        <bienAssure></bienAssure>
         <idClient></idClient>
         <idConseiller></idConseiller>
     </contrats>
 
     <options>
-        <option type="">
-            <nom></nom>
-            <risques></risques>
-            <prix></prix>
+        <option type="vehicule">
+            <nom>Assurance auto tout risques</nom>
+            <risques>0</risques>
+            <prix>850</prix>
+        </option>
+        <option type="vehicule">
+            <nom>Assurance auto aux tiers</nom>
+            <risques>1</risques>
+            <prix>450</prix>
+        </option>
+        <option type="vehicule">
+            <nom>Assurance moto tout risques</nom>
+            <risques>0</risques>
+            <prix>500</prix>
+        </option>
+        <option type="vehicule">
+            <nom>Assurance moto aux tiers</nom>
+            <risques>1</risques>
+            <prix>250</prix>
+        </option>
+        <option type="vehicule">
+            <nom>Assurance scooter tout risques</nom>
+            <risques>0</risques>
+            <prix>400</prix>
+        </option>
+        <option type="vehicule">
+            <nom>Assurance scooter aux tiers</nom>
+            <risques>1</risques>
+            <prix>150</prix>
+        </option>
+        <option type="habitation">
+            <nom>Assurance habitation maison</nom>
+            <risques>2 3 4 5</risques>
+            <prix>440</prix>
+        </option>
+        <option type="habitation">
+            <nom>Assurance habitation appartement</nom>
+            <risques>2 3 4 5</risques>
+            <prix>240</prix>
+        </option>
+        <option type="sante">
+            <nom>Assurance hospitalisation</nom>
+            <risques>7</risques>
+            <prix>300</prix>
+        </option>
+        <option type="professionnel">
+            <nom>Assurance décennale</nom>
+            <risques>6</risques>
+            <prix>10000</prix>
         </option>
     </options>
 
@@ -38,9 +84,37 @@
     </clients>
 
     <risques>
-        <risque id="">
-            <nom></nom>
-            <gravite></gravite>
+        <risque id="0">
+            <nom>Tout risques</nom>
+            <gravite>5</gravite>
+        </risque>
+        <risque id="1">
+            <nom>Aux tiers</nom>
+            <gravite>3</gravite>
+        </risque>
+        <risque id="2">
+            <nom>Vol</nom>
+            <gravite>1</gravite>
+        </risque>
+        <risque id="3">
+            <nom>Incendie</nom>
+            <gravite>1</gravite>
+        </risque>
+        <risque id="4">
+            <nom>Catastrophe naturelle</nom>
+            <gravite>3</gravite>
+        </risque>
+        <risque id="5">
+            <nom>Responsabilité civile</nom>
+            <gravite>2</gravite>
+        </risque>
+        <risque id="6">
+            <nom>Obligatoire</nom>
+            <gravite>0</gravite>
+        </risque>
+        <risque id="7">
+            <nom>Accident</nom>
+            <gravite>1</gravite>
         </risque>
     </risques>
 </compagnie>
