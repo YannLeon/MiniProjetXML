@@ -163,6 +163,88 @@
             <telephone>0678454545</telephone>
             <adresse>42 rue de vaugirard 70043 Monopoly</adresse>
         </client>
+
+        <client id="07">
+            <nom>Bonino</nom>
+            <prenom>Vincent</prenom>
+            <email>bovin@outlook.com</email>
+            <rib>FR00123467845857986523560Q44</rib>
+            <telephone>06784544745</telephone>
+            <adresse>42 rue de courcelles 70043 Monopoly</adresse>
+        </client>
+
+        <client id="08">
+            <nom>Lamere</nom>
+            <prenom>Romain</prenom>
+            <email>lamero@gmail.com</email>
+            <rib>FR00123467236457949862360M74</rib>
+            <telephone>0677485145</telephone>
+            <adresse>3 rue de courcelle 70043 Monopoly</adresse>
+        </client>
+
+        <client id="09">
+            <nom>Meule</nom>
+            <prenom>Nathan</prenom>
+            <email>meulnat@laposte.net</email>
+            <rib>FR00123467234875888523560A66</rib>
+            <telephone>0678454545</telephone>
+            <adresse>78 avenue de la république 70043 Monopoly</adresse>
+        </client>
+
+        <client id="10">
+            <nom>Bruel</nom>
+            <prenom>Martin</prenom>
+            <email>brumar@gmail.com</email>
+            <rib>FR00123467237498655523560O36</rib>
+            <telephone>0611186436</telephone>
+            <adresse>79 avenue de la république 70043 Monopoly</adresse>
+        </client>
+
+        <client id="11">
+            <nom>Maé</nom>
+            <prenom>Christophe</prenom>
+            <email>onsatache@etonsenpoiz.one</email>
+            <rib>FR00123474147475888523560S66</rib>
+            <telephone>0678754545</telephone>
+            <adresse>80 avenue de la république 70043 Monopoly</adresse>
+        </client>
+
+        <client id="12">
+            <nom>Georgelin</nom>
+            <prenom>Côme</prenom>
+            <email>comge@z.one</email>
+            <rib>FR00147986523568595952369K68</rib>
+            <telephone>0606060654</telephone>
+            <adresse>80 avenue de la république 70043 Monopoly</adresse>
+        </client>
+
+        <client id="13">
+            <nom>Balkany</nom>
+            <prenom>Patrick</prenom>
+            <email>pasdeprison@levallois.perret</email>
+            <rib>FR00147986523000155952369B06</rib>
+            <telephone>0654010258</telephone>
+            <adresse>1 boulevard de la villette 70043 Monopoly</adresse>
+        </client>
+
+        <client id="14">
+            <nom>De Beauvoir</nom>
+            <prenom>Simone</prenom>
+            <email>onnenaitpasfemme@onledevient.com</email>
+            <rib>FR00147986523000155777459B86</rib>
+            <telephone>0654010475</telephone>
+            <adresse>19 boulevard de la villette 70043 Monopoly</adresse>
+        </client>
+
+        <client id="15">
+            <nom>Iwata</nom>
+            <prenom>Satoru</prenom>
+            <email>direct@nintendo.net</email>
+            <rib>FR00147986527777774452369V09</rib>
+            <telephone>0654074158</telephone>
+            <adresse>111 boulevard de la villette 70043 Monopoly</adresse>
+        </client>
+        
     </clients>
 
     <risques>
