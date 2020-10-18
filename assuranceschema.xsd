@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="compagnie" type="compagnieType"/>
+    <xs:complexType name='compagnieType'>
+        <xs:sequence>
+            <xs:element name="contrat" type="contratsType"/>
+            <xs:element name="options" type="optionsType"/>
+            <xs:element name="conseillers" type="conseillersType"/>
+            <xs:element name="clients" type="clientsType"/>
+            <xs:element name="risques" type="risquesType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="contratsType">
+        <xs:sequence>
+            <xs:element name="contrat" type="contratType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="optionsType">
+        <xs:sequence>
+            <xs:element name="option" type="optionType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="conseillersType">
+        <xs:sequence>
+            <xs:element name="conseiller" type="conseillerType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="clientsType">
+        <xs:sequence>
+            <xs:element name="client" type="clientType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="risquesType">
+        <xs:sequence>
+            <xs:element name="risque" type="risqueType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
