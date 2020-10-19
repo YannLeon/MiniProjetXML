@@ -17,16 +17,51 @@
         </xs:sequence>
     </xs:complexType>
 
+    <xs:complexType name="contratType">
+        <xs:sequence>
+            <xs:element name="nom" type="xs:string"/>
+            <xs:element name="option" type="xs:string"/>
+            <xs:element name="prix" type="xs:integer"/>
+            <xs:element name="date" type="xs:date"/>
+            <xs:element name="bienAssure" type="xs:string"/>
+            <xs:element name="idClient" type="xs:integer"/>
+            <xs:element name="idConseiller" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
     <xs:complexType name="optionsType">
         <xs:sequence>
             <xs:element name="option" type="optionType" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
 
+    <xs:complexType name="optionType">
+        <xs:sequence>
+            <xs:element name="nom" type="xs:string"/>
+            <xs:element name="risques" type="risquesValues"/>
+            <xs:element name="prix" type="xs:integer"/>
+        </xs:sequence>
+        <xs:attribute name="type" type="xs:string"/>
+    </xs:complexType>
+
+    <xs:simpleType name="risquesValues">
+        <xs:list itemType="xs:integer"/>
+    </xs:simpleType>
+
     <xs:complexType name="conseillersType">
         <xs:sequence>
             <xs:element name="conseiller" type="conseillerType" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="conseillerType">
+        <xs:sequence>
+            <xs:element name="nom" type="xs:string"/>
+            <xs:element name="prenom" type="xs:string"/>
+            <xs:element name="salaire" type="xs:integer"/>
+            <xs:element name="email" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:integer"/>
     </xs:complexType>
 
     <xs:complexType name="clientsType">
@@ -35,9 +70,29 @@
         </xs:sequence>
     </xs:complexType>
 
+    <xs:complexType name="clientType">
+        <xs:sequence>
+            <xs:element name="nom" type="xs:string"/>
+            <xs:element name="prenom" type="xs:string"/>
+            <xs:element name="email" type="xs:string"/>
+            <xs:element name="rib" type="xs:string"/>
+            <xs:element name="telephone" type="xs:string"/>
+            <xs:element name="adresse" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:integer"/>
+    </xs:complexType>
+
     <xs:complexType name="risquesType">
         <xs:sequence>
             <xs:element name="risque" type="risqueType" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="risqueType">
+        <xs:sequence>
+            <xs:element name="nom" type="xs:string"/>
+            <xs:element name="gravite" type="xs:integer"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:integer"/>
     </xs:complexType>
 </xs:schema>
