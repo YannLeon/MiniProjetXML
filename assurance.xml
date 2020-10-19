@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="assurance2.xsl"?>
 <!-- Modélisation d'une base de données XML pour stocker les données d'une compagnie d'assurance -->
-<compagnie>
+<compagnie
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="assuranceschema.xsd">
     <contrats>
         <nom></nom>
         <options></options>
