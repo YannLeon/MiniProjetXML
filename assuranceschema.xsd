@@ -76,7 +76,13 @@
             <xs:element name="prenom" type="xs:string"/>
             <xs:element name="email" type="xs:string"/>
             <xs:element name="rib" type="xs:string"/>
-            <xs:element name="telephone" type="xs:string"/>
+            <xs:element name="telephone">
+                <xs:simpleType>
+                    <xs:restriction base="xs:integer">
+                        <xs:pattern value="[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
             <xs:element name="adresse" type="xs:string"/>
         </xs:sequence>
         <xs:attribute name="id" type="xs:integer"/>
