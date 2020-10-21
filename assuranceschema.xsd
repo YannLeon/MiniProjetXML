@@ -20,10 +20,10 @@
     <xs:complexType name="contratType">
         <xs:sequence>
             <xs:element name="nom" type="xs:string"/>
-            <xs:element name="options" type="xs:string"/>
+            <xs:element name="options" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element name="prix" type="xs:integer"/>
             <xs:element name="date" type="xs:date"/>
-            <xs:element name="bienAssure" type="xs:string"/>
+            <xs:element name="bienAssure" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element name="idClient" type="xs:integer"/>
             <xs:element name="idConseiller" type="xs:string"/>
         </xs:sequence>
@@ -59,7 +59,13 @@
             <xs:element name="nom" type="xs:string"/>
             <xs:element name="prenom" type="xs:string"/>
             <xs:element name="salaire" type="xs:integer"/>
-            <xs:element name="email" type="xs:string"/>
+            <xs:element name="email">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="([a-z])*@([a-z])*.([a-z])*"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
         </xs:sequence>
         <xs:attribute name="id" type="xs:integer"/>
     </xs:complexType>
@@ -74,12 +80,25 @@
         <xs:sequence>
             <xs:element name="nom" type="xs:string"/>
             <xs:element name="prenom" type="xs:string"/>
-            <xs:element name="email" type="xs:string"/>
-            <xs:element name="rib" type="xs:string"/>
+            <xs:element name="email">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="([a-z])*@([a-z])*.([a-z])*"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="rib">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="FR[0-9]{22}[A-Z][0-9]{2}"/>
+                        <xs:length value="27"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
             <xs:element name="telephone">
                 <xs:simpleType>
                     <xs:restriction base="xs:integer">
-                        <xs:pattern value="[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]"/>
+                        <xs:pattern value="[0-9]{10}"/>
                     </xs:restriction>
                 </xs:simpleType>
             </xs:element>
