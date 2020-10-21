@@ -3,15 +3,17 @@
 <!-- Modélisation d'une base de données XML pour stocker les données d'une compagnie d'assurance -->
 <compagnie
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="assuranceschema.xsd">
+        xsi:noNamespaceSchemaLocation="assuranceschema.xsd">
     <contrats>
-        <nom></nom>
-        <options></options>
-        <prix></prix>
-        <date></date>
-        <bienAssure></bienAssure>
-        <idClient></idClient>
-        <idConseiller></idConseiller>
+        <contrat>
+            <nom>1</nom>
+            <options>Assurance auto tout risques</options>
+            <prix>850</prix>
+            <date>2020-10-21</date>
+            <bienAssure>voiture</bienAssure>
+            <idClient>8</idClient>
+            <idConseiller>3</idConseiller>
+        </contrat>
     </contrats>
 
     <options>

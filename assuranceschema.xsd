@@ -3,7 +3,7 @@
     <xs:element name="compagnie" type="compagnieType"/>
     <xs:complexType name='compagnieType'>
         <xs:sequence>
-            <xs:element name="contrat" type="contratsType"/>
+            <xs:element name="contrats" type="contratsType"/>
             <xs:element name="options" type="optionsType"/>
             <xs:element name="conseillers" type="conseillersType"/>
             <xs:element name="clients" type="clientsType"/>
@@ -20,7 +20,7 @@
     <xs:complexType name="contratType">
         <xs:sequence>
             <xs:element name="nom" type="xs:string"/>
-            <xs:element name="option" type="xs:string"/>
+            <xs:element name="options" type="xs:string"/>
             <xs:element name="prix" type="xs:integer"/>
             <xs:element name="date" type="xs:date"/>
             <xs:element name="bienAssure" type="xs:string"/>
