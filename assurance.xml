@@ -6,13 +6,170 @@
         xsi:noNamespaceSchemaLocation="assuranceschema.xsd">
     <contrats>
         <contrat>
-            <nom>1</nom>
-            <options>Assurance auto tout risques</options>
-            <prix>850</prix>
+            <nom>13voiture2020-10-21</nom>
+            <options>Assurance auto tout risques, Assurance hospitalisation</options>
+            <prix>1000</prix>
             <date>2020-10-21</date>
             <bienAssure>voiture</bienAssure>
-            <idClient>8</idClient>
+            <idClient>1</idClient>
             <idConseiller>3</idConseiller>
+        </contrat>
+
+        <contrat>
+            <nom>24maisonmototravail2019-04-28</nom>
+            <options>Assurance habitation maison, Assurance moto tout risques, Assurance décennale</options>
+            <prix>10500</prix>
+            <date>2019-04-28</date>
+            <bienAssure>maison</bienAssure>
+            <bienAssure>moto</bienAssure>
+            <bienAssure>travail</bienAssure>
+            <idClient>2</idClient>
+            <idConseiller>4</idConseiller>
+        </contrat>
+
+        <contrat>
+            <nom>33scootervie2020-01-01</nom>
+            <options>Assurance scooter aux tiers, Assurance hospitalisation</options>
+            <prix>400</prix>
+            <date>2020-01-01</date>
+            <bienAssure>scooter</bienAssure>
+            <bienAssure>vie</bienAssure>
+            <idClient>3</idClient>
+            <idConseiller>3</idConseiller>
+        </contrat>
+
+        <contrat>
+            <nom>46mototravail2020-02-20</nom>
+            <options>Assurance moto aux tiers, Assurance décennale</options>
+            <prix>10000</prix>
+            <date>2020-02-20</date>
+            <bienAssure>moto</bienAssure>
+            <bienAssure>travail</bienAssure>
+            <idClient>4</idClient>
+            <idConseiller>6</idConseiller>
+        </contrat>
+
+        <contrat>
+            <nom>52voituremaison2020-03-15</nom>
+            <options>Assurance auto tout risques, Assurance habitation maison</options>
+            <prix>1200</prix>
+            <date>2020-03-15</date>
+            <bienAssure>voiture</bienAssure>
+            <bienAssure>maison</bienAssure>
+            <idClient>5</idClient>
+            <idConseiller>2</idConseiller>
+        </contrat>
+
+        <contrat>
+            <nom>64maisonappartement2019-05-19</nom>
+            <options>Assurance habitation maison, Assurance habitation appartement</options>
+            <prix>600</prix>
+            <date>2019-05-19</date>
+            <bienAssure>maison</bienAssure>
+            <bienAssure>appartement</bienAssure>
+            <idClient>6</idClient>
+            <idConseiller>4</idConseiller>
+        </contrat>
+
+        <contrat>
+            <nom>73motovie2020-03-30</nom>
+            <options>Assurance moto aux tiers, Assurance hospitalisation</options>
+            <prix>500</prix>
+            <date>2020-03-30</date>
+            <bienAssure>moto</bienAssure>
+            <bienAssure>vie</bienAssure>
+            <idClient>7</idClient>
+            <idConseiller>3</idConseiller>
+        </contrat>
+
+        <contrat>
+            <nom>86maisonscooter2020-07-23</nom>
+            <options>Assurance habitation maison, Assurance scooter tout risques</options>
+            <prix>800</prix>
+            <date>2020-07-23</date>
+            <bienAssure>maison</bienAssure>
+            <bienAssure>scooter</bienAssure>
+            <idClient>8</idClient>
+            <idConseiller>6</idConseiller>
+        </contrat>
+
+        <contrat>
+            <nom>91voituremotoscooter2020-01-10</nom>
+            <options>Assurance auto tout risques, Assurance moto tout risques, Assurance scooter tout risques</options>
+            <prix>1600</prix>
+            <date>2020-01-10</date>
+            <bienAssure>voiture</bienAssure>
+            <bienAssure>moto</bienAssure>
+            <bienAssure>scooter</bienAssure>
+            <idClient>9</idClient>
+            <idConseiller>1</idConseiller>
+        </contrat>
+
+        <contrat>
+            <nom>102maisonvie2019-06-26</nom>
+            <options>Assurance habitation maison, Assurance hospitalisation</options>
+            <prix>700</prix>
+            <date>2019-06-26</date>
+            <bienAssure>maison</bienAssure>
+            <bienAssure>vie</bienAssure>
+            <idClient>10</idClient>
+            <idConseiller>2</idConseiller>
+        </contrat>
+
+        <contrat>
+            <nom>115maisonmaison2020-12-25</nom>
+            <options>Assurance habitation maison, Assurance habitation maison</options>
+            <prix>850</prix>
+            <date>2020-12-25</date>
+            <bienAssure>maison</bienAssure>
+            <bienAssure>maison</bienAssure>
+            <idClient>11</idClient>
+            <idConseiller>5</idConseiller>
+        </contrat>
+
+        <contrat>
+            <nom>122motoappartement2020-02-11</nom>
+            <options>Assurance moto tout risques, Assurance habitation appartement, Assurance hospitalisation</options>
+            <prix>1000</prix>
+            <date>2020-02-11</date>
+            <bienAssure>moto</bienAssure>
+            <bienAssure>appartement</bienAssure>
+            <bienAssure>vie</bienAssure>
+            <idClient>12</idClient>
+            <idConseiller>2</idConseiller>
+        </contrat>
+
+        <contrat>
+            <nom>132motoscooter2020-01-13</nom>
+            <options>Assurance moto tout risques, Assurance scooter tout risques</options>
+            <prix>850</prix>
+            <date>2020-01-13</date>
+            <bienAssure>moto</bienAssure>
+            <bienAssure>scooter</bienAssure>
+            <idClient>13</idClient>
+            <idConseiller>2</idConseiller>
+        </contrat>
+
+        <contrat>
+            <nom>141vietravail2019-06-06</nom>
+            <options>Assurance hospitalisation, Assurance décennale</options>
+            <prix>10000</prix>
+            <date>2019-06-06</date>
+            <bienAssure>vie</bienAssure>
+            <bienAssure>travail</bienAssure>
+            <idClient>14</idClient>
+            <idConseiller>1</idConseiller>
+        </contrat>
+
+        <contrat>
+            <nom>152scootervie2020-03-25</nom>
+            <options>Assurance scooter tout risques, Assurance hospitalisation</options>
+            <prix>650</prix>
+            <date>2020-03-25</date>
+            <bienAssure>scooter</bienAssure>
+            <bienAssure>vie</bienAssure>
+            <idClient>15</idClient>
+            <idConseiller>2</idConseiller>
         </contrat>
     </contrats>
 
