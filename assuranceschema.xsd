@@ -62,7 +62,7 @@
             <xs:element name="email">
                 <xs:simpleType>
                     <xs:restriction base="xs:string">
-                        <xs:pattern value="([a-z])*@([a-z])*.([a-z])*"/>
+                        <xs:pattern value="([a-z]|[0-9]|\.)*@([a-z])*\.([a-z])*"/>
                     </xs:restriction>
                 </xs:simpleType>
             </xs:element>
@@ -83,7 +83,7 @@
             <xs:element name="email">
                 <xs:simpleType>
                     <xs:restriction base="xs:string">
-                        <xs:pattern value="([a-z])*@([a-z])*.([a-z])*"/>
+                        <xs:pattern value="([a-z]|[0-9]|\.)*@([a-z])*\.([a-z])*"/>
                     </xs:restriction>
                 </xs:simpleType>
             </xs:element>
