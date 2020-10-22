@@ -10,6 +10,17 @@
             <xs:field xpath="idClient" />
         </xs:keyref>
 
+<!--        <xs:key name="risqueId"  >-->
+<!--            <xs:selector xpath="./risques/risque" />-->
+<!--            <xs:field xpath="@id" />-->
+<!--        </xs:key>-->
+<!--        <xs:keyref name="refRisqueOption" refer="risqueId">-->
+<!--            <xs:selector xpath="./options/option" />-->
+<!--            <xs:field xpath="risques" />-->
+<!--        </xs:keyref>-->
+<!--        Ajout de la référence entre l'id des risques et les options associées-->
+<!--        Ne fonctionne pas malheureusement-->
+
 <!--        <xs:key name="conseillerId"  >-->
 <!--            <xs:selector xpath="./conseillers/conseiller" />-->
 <!--            <xs:field xpath="@id" />-->
