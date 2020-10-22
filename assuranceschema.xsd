@@ -1,6 +1,27 @@
 <?xml version="1.0"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <xs:element name="compagnie" type="compagnieType"/>
+    <xs:element name="compagnie" type="compagnieType">
+        <xs:key name="clientId"  >
+            <xs:selector xpath="./clients/client" />
+            <xs:field xpath="@id" />
+        </xs:key>
+        <xs:keyref name="refClientContrat" refer="clientId">
+            <xs:selector xpath="./contrats/contrat" />
+            <xs:field xpath="idClient" />
+        </xs:keyref>
+
+<!--        <xs:key name="conseillerId"  >-->
+<!--            <xs:selector xpath="./conseillers/conseiller" />-->
+<!--            <xs:field xpath="@id" />-->
+<!--        </xs:key>-->
+<!--        <xs:keyref name="refConseillerContrat" refer="conseillerId">-->
+<!--            <xs:selector xpath="./contrats/contrat" />-->
+<!--            <xs:field xpath="idConseiller" />-->
+<!--        </xs:keyref>-->
+<!--        Ajout de la référence entre l'id des conseillers et les contrats associés-->
+<!--        Ne fonctionne pas malheureusement-->
+    </xs:element>
+
     <xs:complexType name='compagnieType'>
         <xs:sequence>
             <xs:element name="contrats" type="contratsType"/>
@@ -120,4 +141,6 @@
         </xs:sequence>
         <xs:attribute name="id" type="xs:integer"/>
     </xs:complexType>
+
+
 </xs:schema>
