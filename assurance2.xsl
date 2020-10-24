@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--Cette feuille de transformation permet d’afficher uniquement les conseillers
+de la compagnie payés plus de 30 000€ par an-->
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:template match="/">
         <html>
@@ -17,6 +19,7 @@
             </body>
         </html>
     </xsl:template>
+
     <xsl:template match="conseiller">
         <xsl:if test="salaire &gt; 30000">
             <tr>

@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--Cette feuille de transformation à pour but d’afficher les options
+proposées par la compagnie d’assurance triées par ordre de prix croissant-->
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:template match="/">
         <html>
             <body>
-                <h2>Liste des options triées par ordre de prix croissant</h2>
+                <h2>Liste des <xsl:value-of select="count(//options//option)" />
+                    options triées par ordre de prix croissant</h2>
                 <xsl:apply-templates select="compagnie/options/option">
                     <xsl:sort select="prix" data-type="number"/>
                 </xsl:apply-templates>
