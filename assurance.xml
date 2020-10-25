@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="assurance2.xsl"?>
+<?xml-stylesheet type="text/xsl" href="assurance4.xsl"?>
 <!-- Modélisation d'une base de données XML pour stocker les données d'une compagnie d'assurance -->
 <compagnie
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -7,7 +7,7 @@
     <contrats>
         <contrat>
             <nom>13voiture2020-10-21</nom>
-            <options>Assurance auto tout risques, Assurance hospitalisation</options>
+            <options>Assurance auto tout risques</options>
             <prix>1000</prix>
             <date>2020-10-21</date>
             <bienAssure>voiture</bienAssure>
